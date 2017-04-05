@@ -4888,7 +4888,7 @@ var acf;
 				$.getScript('https://www.google.com/jsapi', function(){
 					
 					// load maps
-				    google.load('maps', '3', { other_params: 'sensor=false&libraries=places', callback: function(){
+				    google.load('maps', '3', { other_params: 'key=AIzaSyCZFWgdnWS9Z-0K9s5NotEEnutKcH2Rw9Q&libraries=places', callback: function(){
 				    	
 				    	// set status
 				    	self.status = 'ready';
@@ -4908,13 +4908,14 @@ var acf;
 			
 			// no maps or places
 			if( !acf.isset(window, 'google', 'maps', 'places') ) {
+				console.log('clgt');
 				
 				// set status
 				self.status = 'loading';
 				
 				
 				// load maps
-			    google.load('maps', '3', { other_params: 'sensor=false&libraries=places', callback: function(){
+			    google.load('maps', '3', { other_params: 'key=AIzaSyCZFWgdnWS9Z-0K9s5NotEEnutKcH2Rw9Q&libraries=places', callback: function(){
 			    	
 			    	// set status
 			    	self.status = 'ready';
