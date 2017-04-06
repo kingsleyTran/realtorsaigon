@@ -38,7 +38,7 @@ if ( ! function_exists( 'tt_property_price' ) ) {
 	  if ( ! empty( $property_price ) ) {
 
 		  if ( $property_price == -1 ) {
-				$output = esc_html__( 'Price Upon Request', 'realty' );
+				$output = esc_html__( 'Giá: Liên hệ', 'realty' );
 		  } else if ( $property_price ) {
 
 				$output = '';
@@ -166,7 +166,7 @@ if ( ! function_exists( 'tt_icon_property_video' ) ) {
 			if ( $property_video_provider == "vimeo" ) {
 				$video_url = '//vimeo.com/';
 			}
-			return '<a href="' . $video_url . $property_video_id . '" class="property-video-popup"><i class="icon-video-camera" data-toggle="tooltip" title="' . esc_html__( 'Watch Trailer', 'realty' ) . '"></i></a>';
+			return '<a href="' . $video_url . $property_video_id . '" class="property-video-popup"><i class="icon-video-camera" data-toggle="tooltip" title="' . esc_html__( 'Xem trailer', 'realty' ) . '"></i></a>';
 		} else {
 			return false;
 		}

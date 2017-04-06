@@ -59,14 +59,14 @@ if ( ! function_exists( 'tt_add_remove_follow' ) ) {
 
 			if ( ! empty( $get_user_meta_follow ) && in_array( $property_id, $get_user_meta_follow[0] ) ) {
 				// Follow: true
-				$favicon = '<i class="add-to-follow icon-email-1" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Unsubscribe From Email Updates', 'realty' ) . '"></i>';
+				$favicon = '<i class="add-to-follow icon-email-1" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Bỏ đăng ký', 'realty' ) . '"></i>';
 			} else {
 				// Follow: false
-				$favicon = '<i class="add-to-follow icon-email" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Subscribe To Email Updates', 'realty' ) . '"></i>';
+				$favicon = '<i class="add-to-follow icon-email" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Đăng ký email theo dõi', 'realty' ) . '"></i>';
 			}
 		} else {
 			// Not Logged-In Visitor
-			$favicon = '<i class="add-to-follow icon-email" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Subscribe To Email Updates', 'realty' ) . '"></i>';
+			$favicon = '<i class="add-to-follow icon-email" data-fol-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Đăng ký email theo dõi', 'realty' ) . '"></i>';
 		}
 
 		return $favicon;
@@ -95,7 +95,7 @@ if ( ! function_exists( 'tt_follow_script' ) ) {
 					}
 
 					if ( jQuery(this).hasClass('icon-email') ) {
-						jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Subscribe To Email Updates', 'realty' ); ?>');
+						jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Bỏ đăng ký', 'realty' ); ?>');
 					}
 
 					jQuery(this).find('i').toggleClass('icon-email icon-email-1');

@@ -1,5 +1,5 @@
 <section id="contact">
-	<h3 class="section-title"><span><?php esc_html_e( 'Contact', 'realty' ); ?></span></h3>
+	<h3 class="section-title"><span><?php esc_html_e( 'Liên hệ', 'realty' ); ?></span></h3>
   <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
   <?php
 	  global $realty_theme_option;
@@ -11,16 +11,16 @@
  	?>
 	  <form id="contact-form" method="post" action="<?php echo admin_url( 'admin-ajax.php' ); ?>">
 			<div class="form-group">
-				<input type="text" name="name" id="name" class="form-control" title="<?php esc_html_e( 'Please enter your name.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Name', 'realty' ); ?>" />
+				<input type="text" name="name" id="name" class="form-control" title="<?php esc_html_e( 'Please enter your name.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Họ tên', 'realty' ); ?>" />
 			</div>
 			<div class="form-group">
 				<input type="text" name="email" id="email" class="form-control" title="<?php esc_html_e( 'Please enter your email.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Email', 'realty' ); ?>" />
 			</div>
 			<div class="form-group">
-				<input type="text" name="phone" id="phone" class="form-control" title="<?php esc_html_e( 'Please enter only digits for your phone number.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Phone', 'realty' ); ?>" />
+				<input type="text" name="phone" id="phone" class="form-control" title="<?php esc_html_e( 'Please enter only digits for your phone number.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Số điện thoại', 'realty' ); ?>" />
 			</div>
 			<div class="form-group">
-				<textarea name="message" rows="5" id="message" class="form-control" title="<?php esc_html_e( 'Please enter your message.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Message', 'realty' ); ?>"></textarea>
+				<textarea name="message" rows="5" id="message" class="form-control" title="<?php esc_html_e( 'Please enter your message.', 'realty' ); ?>" placeholder="<?php esc_html_e( 'Nội dung', 'realty' ); ?>"></textarea>
 			</div>
 
 			<?php	if ( empty( $realty_theme_option['google-recaptcha-site-key'] ) ) { ?>
@@ -30,7 +30,7 @@
 				<input type="hidden" name="recaptcha">
 			<?php } ?>
 
-			<input type="submit" name="submit" value="<?php esc_html_e( 'Send Message', 'realty' ); ?>" >
+			<input type="submit" name="submit" value="<?php esc_html_e( 'Gửi tin nhắn', 'realty' ); ?>" >
 			<input type="hidden" name="action" value="submit_property_contact_form" />
 			<input type="hidden" name="nonce" value="<?php echo wp_create_nonce(); ?>" />
 			<?php if ( isset( $email ) && ! empty( $email ) ) { // Check If Agent Has An Email Address ?>

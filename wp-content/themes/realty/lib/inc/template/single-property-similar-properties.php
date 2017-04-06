@@ -120,7 +120,7 @@
 	?>
 
 	<section id="similar-properties">
-		<h3 class="section-title"><span><?php esc_html_e( 'Similar Properties', 'realty' ); ?> (<?php echo $query_similar_properties->found_posts; ?>)</span></h3>
+		<h3 class="section-title"><span><?php esc_html_e( 'Thường xem cùng', 'realty' ); ?> (<?php echo $query_similar_properties->found_posts; ?>)</span></h3>
 		<div class="property-items">
 
 			<div id="<?php echo esc_attr( $similar_properties_carousel_id ); ?>">

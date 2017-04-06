@@ -239,7 +239,7 @@ $last_updated_on = get_post_modified_time( get_option( 'date_format' ) );
 					$disable_property_comparison = $realty_theme_option['property-comparison-disabled'];
 
 					if ( get_post_status($property_id) == 'publish' && ! $disable_property_comparison ) {
-						echo '<i class="icon-add compare-property" data-compare-id="' . get_the_ID() . '" data-toggle="tooltip" title="' . esc_html__( 'Compare', 'realty' ) . '"></i>';
+						echo '<i class="icon-add compare-property" data-compare-id="' . get_the_ID() . '" data-toggle="tooltip" title="' . esc_html__( 'So sánh', 'realty' ) . '"></i>';
 					}
 				?>
 

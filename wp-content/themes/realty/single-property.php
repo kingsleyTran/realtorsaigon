@@ -143,7 +143,7 @@
 						<span><?php echo get_the_title( $single_property_id ); ?></span>
 						<div class="clearfix mobile"></div>
 						<span><?php echo tt_add_remove_favorites( $single_property_id ); ?></span>
-						<span><a href="#location"><i class="icon-pin-full" data-toggle="tooltip" title="<?php esc_html_e( 'Show Location', 'realty' );  ?>"></i></a></span>
+						<span><a href="#location"><i class="icon-pin-full" data-toggle="tooltip" title="<?php esc_html_e( 'Xem vị trí', 'realty' );  ?>"></i></a></span>
 						<span><?php echo tt_add_remove_follow( $single_property_id ); ?></span>
 						<?php echo tt_icon_property_video( $single_property_id ); ?>
 					</h1>
@@ -323,7 +323,7 @@
 				<div class="col-sm-4 col-md-3">
 					<a href="#" id="print">
 						<div class="meta-title"><i class="icon-print"></i></div>
-						<div class="meta-data"><?php esc_html_e( 'Print this page', 'realty' ); ?></div>
+						<div class="meta-data"><?php esc_html_e( 'In trang này', 'realty' ); ?></div>
 					</a>
 				</div>
 			<?php } ?>

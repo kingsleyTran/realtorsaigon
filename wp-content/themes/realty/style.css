@@ -3580,7 +3580,7 @@ cite:before {
   top: 70px;
 }
 .primary-menu a:hover {
-  color: #000;
+  color: #e83d29;;
 }
 
 .primary-menu a:before {
@@ -3590,7 +3590,7 @@ cite:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #e83d29;;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);

@@ -6,7 +6,7 @@
 <?php if ( ! $disable_property_comparison ) { ?>
 	<div id="compare-properties-popup">
 
-		<h4><?php esc_html_e( 'Compare Properties', 'realty' ); ?></h4>
+		<h4><?php esc_html_e( 'So sánh (Tối đa 4 sản phẩm)', 'realty' ); ?></h4>
 
 		<div id="compare-properties-thumbnails"></div>
 
@@ -29,7 +29,7 @@
 
 		<?php	if ( $comparison_page_id ) { ?>
 			<p>
-				<a href="<?php echo get_permalink( $comparison_page_id ); ?>" class="btn btn-primary btn-lg"><?php esc_html_e( 'Compare', 'realty' ); ?></a>
+				<a href="<?php echo get_permalink( $comparison_page_id ); ?>" class="btn btn-primary btn-lg"><?php esc_html_e( 'So sánh', 'realty' ); ?></a>
 			</p>
 		<?php } else { ?>
 			<p class="alert alert-info">
@@ -38,7 +38,7 @@
 		<?php }	?>
 
 		<p class="alert alert-info hide">
-			<small><?php esc_html_e( 'You have reached the maximum of four properties per comparison.', 'realty' ); ?></small>
+			<small><?php esc_html_e( 'Rất tiếc, bạn chỉ được phép so sánh 4 sản phẩm một lúc :(', 'realty' ); ?></small>
 			</p>
 
 	</div>

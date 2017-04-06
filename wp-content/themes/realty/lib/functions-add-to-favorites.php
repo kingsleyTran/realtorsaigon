@@ -60,14 +60,14 @@ if ( !function_exists('tt_add_remove_favorites') ) {
 
 			if ( ! empty( $get_user_meta_favorites ) && in_array( $property_id, $get_user_meta_favorites[0] ) ) {
 				// Property Is Already In Favorites
-				$favicon = '<i class="add-to-favorites icon-heart" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Remove From Favorites', 'realty' ) . '"></i>';
+				$favicon = '<i class="add-to-favorites icon-heart" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Bỏ thích', 'realty' ) . '"></i>';
 			} else {
 				// Property Isn't In Favorites
-				$favicon = '<i class="add-to-favorites icon-heart-1" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Add To Favorites', 'realty' ) . '"></i>';
+				$favicon = '<i class="add-to-favorites icon-heart-1" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Thích', 'realty' ) . '"></i>';
 			}
 		} else {
 			// Not Logged-In Visitor
-			$favicon = '<i class="add-to-favorites icon-heart-1" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Add To Favorites', 'realty' ) . '"></i>';
+			$favicon = '<i class="add-to-favorites icon-heart-1" data-fav-id="' . $property_id . '" data-toggle="tooltip" title="' . esc_html__( 'Thích', 'realty' ) . '"></i>';
 		}
 
 		return $favicon;
@@ -115,7 +115,7 @@ if ( ! function_exists( 'tt_favorites_script' ) ) {
 				jQuery(this).toggleClass('icon-heart icon-heart-1');
 
 				if ( jQuery(this).hasClass('icon-heart') ) {
-					jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Remove From Favorites', 'realty' ); ?>');
+					jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Bỏ thích', 'realty' ); ?>');
 				}
 
 			}
@@ -132,7 +132,7 @@ if ( ! function_exists( 'tt_favorites_script' ) ) {
 
 				// Toggle Favorites Tooltips
 				if ( jQuery(this).hasClass('icon-heart') ) {
-					jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Remove From Favorites', 'realty' ); ?>');
+					jQuery(this).attr('data-original-title', '<?php esc_html_e( 'Bỏ thích', 'realty' ); ?>');
 				}
 
 				jQuery(this).find('i').toggleClass('icon-heart icon-heart-1');
